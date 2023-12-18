@@ -1,20 +1,18 @@
 package openai
 
 import (
-    "bytes"
-    "encoding/json"
-    "io"
-    "log"
-    "net/http"
-    "time"
+	"bytes"
+	"encoding/json"
+	"io"
+	"log"
+	"net/http"
+	"time"
 )
 
 // Client is a struct that will hold any necessary information for making requests to OpenAI
 type Client struct {
     APIKey string
     APIURL string
-
-    httpClient *http.Client
 }
 
 // NewClient creates a new instance of Client
