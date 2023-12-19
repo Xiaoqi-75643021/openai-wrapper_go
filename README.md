@@ -1,1 +1,1 @@
-The AI technology stack for the ChatGPT mirror site.
+# The AI technology stack for the ChatGPT mirror site.

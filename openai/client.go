@@ -32,7 +32,7 @@ func (c *Client) Chat(requestPayload *ChatRequest, logger *log.Logger) (*ChatRes
         return nil, err
     }
 
-    req.Header.Add("Content-Type", "application/json")
+    req.Header.Add("Content-Type", "application/json; charset=utf-8")
     req.Header.Add("Authorization", "Bearer "+c.APIKey)
 
     resp, err := http.DefaultClient.Do(req)
