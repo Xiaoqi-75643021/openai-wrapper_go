@@ -57,7 +57,7 @@ func (c *Client) Chat(requestPayload *ChatRequest, logger *log.Logger) (*ChatRes
     logger.Printf("OpenAI response body: %s", body)
 
     // Log the response to the log file using the passed logger
-    logResponse(&chatResponse, logger)
+    // logResponse(&chatResponse, logger)
 
     return &chatResponse, nil
 }
